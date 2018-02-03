@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 21100299058,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.SetUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Create a new Account with blank FirstName",
+        "description": "",
+        "id": "facebook-unsuccessfulsignup;create-a-new-account-with-blank-firstname",
+        "after": [
+          {
+            "result": {
+              "duration": 500580966,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14169274278,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters inputs without FirstName",
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.user_enters_inputs_without_FirstName(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FName",
+                  "LName",
+                  "EmailId",
+                  "ReEmail",
+                  "Pwd"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "",
+                  "Ten",
+                  "Ten@yahoo.com",
+                  "Ten@yahoo.com",
+                  "Test12345"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100639897,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the FirstName ErrorMessage",
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.verify_the_FirstName_ErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20048019819,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.SetUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Create Account with blank EmailId",
+        "description": "",
+        "id": "facebook-unsuccessfulsignup;create-account-with-blank-emailid",
+        "after": [
+          {
+            "result": {
+              "duration": 516416083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12582815125,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters inputs without BlankEmailId",
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.user_enters_inputs_without_BlankEmailId(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FName",
+                  "LName",
+                  "EmailId",
+                  "ReEmail",
+                  "Pwd"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Net",
+                  "Net",
+                  "Net@yahoo.com",
+                  "",
+                  "Test12345"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67271453,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify the BlankEmailId ErrorMessage",
+            "match": {
+              "location": "UnSuccessfulSignUpSteps.verify_the_BlankEmailId_ErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook UnSuccessfulSignup",
+    "description": "",
+    "id": "facebook-unsuccessfulsignup",
+    "keyword": "Feature",
+    "uri": "C:/Users/Murali/Desktop/selenium/FBBDDFramework/src/main/java/com/qa/FB/Features/UnSuccessfulSignup.feature"
+  }
+]
