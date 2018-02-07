@@ -1,0 +1,45 @@
+Feature: Login Action
+
+  Scenario: Successful Login with Valid Credentials          # Login.feature:4
+    #Given user is already on Login Page
+    When title of login page is Facebook - Log In or Sign Up # LoginPageSteps.title_of_login_page_is_Facebook_Log_In_or_Sign_Up()
+    Then user enters "email" and "Pwd"                       # LoginPageSteps.user_enters_and(String,String)
+    Then user is on home page                                # LoginPageSteps.user_is_on_home_page()
+    Then user click on TriangleButton                        # LoginPageSteps.user_click_on_TriangleButton()
+    And click on LogOut Button                               # LoginPageSteps.click_on_LogOut_Button()
+    Then user is on the LoginPage                            # LoginPageSteps.user_is_on_the_LoginPage()
+Feature: Fill a simple form with excel data
+
+  Scenario Outline: Data driven with excel and data sets                     # ReadDataExcelSignup.feature:3
+    Given user is  on Main Page
+    Then user enters Signup Credentials with excel row "<row_index>" dataset
+
+    Examples: 
+
+  Scenario Outline: Data driven with excel and data sets           # ReadDataExcelSignup.feature:8
+    Given user is  on Main Page                                    # ReadDataExcelSignupPageSteps.user_is_on_Main_Page()
+    Then user enters Signup Credentials with excel row "1" dataset # ReadDataExcelSignupPageSteps.user_enters_Signup_Credentials_with_excel_row_dataset(String)
+
+  Scenario Outline: Data driven with excel and data sets           # ReadDataExcelSignup.feature:9
+    Given user is  on Main Page                                    # ReadDataExcelSignupPageSteps.user_is_on_Main_Page()
+    Then user enters Signup Credentials with excel row "2" dataset # ReadDataExcelSignupPageSteps.user_enters_Signup_Credentials_with_excel_row_dataset(String)
+Feature: Facebook Signup
+
+  Scenario: Facebook Create a new Account scenario           # Signup.feature:3
+    #Given user is already on Login Page
+    When title of login page is Facebook - Log In or Sign Up # LoginPageSteps.title_of_login_page_is_Facebook_Log_In_or_Sign_Up()
+    Then user enters Signup credentials                      # SignupPageSteps.user_enters_Signup_credentials(DataTable)
+    #Then user select birthday from drop down
+    #Then user check one of the radoi button
+    #Then user clicks on create account button
+    Then user is on homepage                                 # SignupPageSteps.user_is_on_homepage()
+    Then Close the browser                                   # SignupPageSteps.close_the_browser()
+Feature: Facebook UnSuccessfulSignup
+
+  Scenario: Create a new Account with blank FirstName # UnSuccessfulSignup.feature:4
+    When user enters inputs without FirstName         # UnSuccessfulSignUpSteps.user_enters_inputs_without_FirstName(DataTable)
+    Then verify the FirstName ErrorMessage            # UnSuccessfulSignUpSteps.verify_the_FirstName_ErrorMessage()
+
+  Scenario: Create Account with blank EmailId    # UnSuccessfulSignup.feature:11
+    When user enters inputs without BlankEmailId # UnSuccessfulSignUpSteps.user_enters_inputs_without_BlankEmailId(DataTable)
+    Then verify the BlankEmailId ErrorMessage    # UnSuccessfulSignUpSteps.verify_the_BlankEmailId_ErrorMessage()

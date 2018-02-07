@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 21100299058,
+  "duration": 6548042670,
   "status": "passed"
 });
 formatter.scenario({
@@ -54,22 +54,22 @@ formatter.match({
   "location": "UnSuccessfulSignUpSteps.user_enters_inputs_without_FirstName(DataTable)"
 });
 formatter.result({
-  "duration": 14169274278,
+  "duration": 8737480638,
   "status": "passed"
 });
 formatter.match({
   "location": "UnSuccessfulSignUpSteps.verify_the_FirstName_ErrorMessage()"
 });
 formatter.result({
-  "duration": 100639897,
+  "duration": 59454621,
   "status": "passed"
 });
 formatter.after({
-  "duration": 500580966,
+  "duration": 221605687,
   "status": "passed"
 });
 formatter.before({
-  "duration": 20048019819,
+  "duration": 7208300939,
   "status": "passed"
 });
 formatter.scenario({
@@ -116,18 +116,18 @@ formatter.match({
   "location": "UnSuccessfulSignUpSteps.user_enters_inputs_without_BlankEmailId(DataTable)"
 });
 formatter.result({
-  "duration": 12582815125,
+  "duration": 8134719189,
   "status": "passed"
 });
 formatter.match({
   "location": "UnSuccessfulSignUpSteps.verify_the_BlankEmailId_ErrorMessage()"
 });
 formatter.result({
-  "duration": 67271453,
+  "duration": 58789619,
   "status": "passed"
 });
 formatter.after({
-  "duration": 516416083,
+  "duration": 216789019,
   "status": "passed"
 });
 });

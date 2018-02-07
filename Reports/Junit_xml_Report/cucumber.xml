@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="97.978529">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="18.33154">
+<system-out><![CDATA[When title of login page is Facebook - Log In or Sign Up....................passed
+Then user enters "email" and "Pwd"..........................................passed
+Then user is on home page...................................................passed
+Then user click on TriangleButton...........................................passed
+And click on LogOut Button..................................................passed
+Then user is on the LoginPage...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Fill a simple form with excel data" name="Data driven with excel and data sets" time="15.232632">
+<system-out><![CDATA[Given user is  on Main Page.................................................passed
+Then user enters Signup Credentials with excel row "1" dataset..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Fill a simple form with excel data" name="Data driven with excel and data sets 2" time="14.796381">
+<system-out><![CDATA[Given user is  on Main Page.................................................passed
+Then user enters Signup Credentials with excel row "2" dataset..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook Signup" name="Facebook Create a new Account scenario" time="20.757024">
+<system-out><![CDATA[When title of login page is Facebook - Log In or Sign Up....................passed
+Then user enters Signup credentials.........................................passed
+Then user is on homepage....................................................passed
+Then Close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook UnSuccessfulSignup" name="Create a new Account with blank FirstName" time="14.478064">
+<system-out><![CDATA[When user enters inputs without FirstName...................................passed
+Then verify the FirstName ErrorMessage......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook UnSuccessfulSignup" name="Create Account with blank EmailId" time="14.382888">
+<system-out><![CDATA[When user enters inputs without BlankEmailId................................passed
+Then verify the BlankEmailId ErrorMessage...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

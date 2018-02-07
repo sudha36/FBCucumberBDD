@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="69.085316">
-<testcase classname="Facebook UnSuccessfulSignup" name="Create a new Account with blank FirstName" time="35.870794">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="31.185183">
+<testcase classname="Facebook UnSuccessfulSignup" name="Create a new Account with blank FirstName" time="15.566584">
 <system-out><![CDATA[When user enters inputs without FirstName...................................passed
 Then verify the FirstName ErrorMessage......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Facebook UnSuccessfulSignup" name="Create Account with blank EmailId" time="33.214522">
+<testcase classname="Facebook UnSuccessfulSignup" name="Create Account with blank EmailId" time="15.618599">
 <system-out><![CDATA[When user enters inputs without BlankEmailId................................passed
 Then verify the BlankEmailId ErrorMessage...................................passed
 ]]></system-out>

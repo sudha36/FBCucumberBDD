@@ -111,3 +111,4 @@ public class UnSuccessfulSignUpPage extends TestBase{
 				Assert.assertEquals("Please re-enter your email address.", Actual);
 			}
 }
+
